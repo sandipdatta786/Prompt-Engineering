@@ -1,0 +1,18 @@
+lamp_review ="""Needed a nice lamp for my bedroom, and this one \
+had additional storage and not too high of a price \
+point. Got it fast - arrived in 2 days. The string \
+to the lamp broke during the transit and the company \
+happily sent over a new one. Came within a few days \
+as well. It was easy to put together. Then I had a \
+missing part, so I contacted their support and they \
+very quickly got me the missing piece! Seems to me \
+to be a great company that cares about their customers \
+and products. """
+
+prompt = f"""
+What is the sentiment of the following review, which is delimited with triple backtics?
+
+Review text : '''{lamp_review}'''
+"""
+response = get_completion(prompt)
+print (response)
