@@ -1,0 +1,7 @@
+prompt = f"""
+Summarize the text delimited by triple backticks \ 
+into a single sentence.
+```{text}```
+"""
+response = get_completion(prompt)
+print(response)
